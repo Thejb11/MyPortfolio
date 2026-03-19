@@ -228,6 +228,35 @@ transform: translateX(-50%);
     border-radius: 10px;
 }
 
+/* عند الشاشات الصغيرة */
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 1.8rem; /* تغيير الحجم هنا إذا لزم الأمر */
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem; /* تغيير الحجم هنا */
+        text-align: center;
+        margin-top: 0;
+    }
+    
+    /* محاذاة الصورة */
+    .profile-img {
+        margin-top: 20px;
+        width: 150px;
+        height: 150px;
+    }
+
+    /* مركزية النصوص */
+    .hero .name {
+        text-align: center;
+    }
+}
+
+
+
 
 /* الشاشات الكبيرة (≥ 768px) */
 @media (min-width: 768px) {
@@ -287,7 +316,7 @@ transform: translateX(-50%);
 /* تخصيص "Albatool" بحيث يبدأ من الجهة اليسرى */
 .hero h1 .name {
     display: block;
-    font-size: 5.5rem;
+    font-size: 4.5rem;
     color: #374151;
     margin-top: 0; /* أزل المسافة بين "Hi I'm" و "Albatool" */
     text-align: left; /* لضمان أن "Albatool" يبدأ من اليسار */
@@ -295,7 +324,7 @@ transform: translateX(-50%);
 
 .hero h1 .lastname {
     display: block;
-    font-size: 5.5rem;
+    font-size: 4.5rem;
     color: #374151;
     padding-left: 90px; /* ضبط المسافة لبدء من عند حرف "t" */
     margin-bottom: 30px; /* زيادة المسافة أسفل "Alahmari" */
