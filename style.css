@@ -228,30 +228,32 @@ transform: translateX(-50%);
     border-radius: 10px;
 }
 
-/* عند الشاشات الصغيرة */
+/* تخصيص التصميم لشاشات الجوال */
 @media (max-width: 576px) {
-    .hero h1 {
-        font-size: 1.8rem; /* تغيير الحجم هنا إذا لزم الأمر */
-        text-align: center;
-        margin-bottom: 10px;
+    /* تغيير تنسيق العناوين */
+    h1, h2, h3, h4, h5 {
+        text-align: center; /* توسيط العناوين */
+        font-size: 1.5rem; /* تقليل حجم الخط */
     }
 
-    .hero h2 {
-        font-size: 1.5rem; /* تغيير الحجم هنا */
-        text-align: center;
-        margin-top: 0;
-    }
-    
-    /* محاذاة الصورة */
-    .profile-img {
-        margin-top: 20px;
-        width: 150px;
-        height: 150px;
+    /* تغيير حجم الخط والتباعد */
+    p {
+        font-size: 1rem; /* تغيير حجم النص */
+        text-align: center; /* توسيط النص */
+        margin: 10px 0; /* تقليل المسافات بين الفقرات */
     }
 
-    /* مركزية النصوص */
-    .hero .name {
-        text-align: center;
+
+
+    /* تعديل التباعد في الأقسام */
+    #about, #education, #projects {
+        padding: 20px;
+    }
+
+    /* ضبط عرض الأقسام */
+    .card {
+        width: 100%; /* اجعل العرض بالكامل */
+        margin-bottom: 20px; /* إضافة مسافة بين البطاقات */
     }
 }
 
